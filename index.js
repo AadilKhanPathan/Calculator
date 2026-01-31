@@ -1,0 +1,54 @@
+
+const display = document.getElementById("display");
+
+function appendToDisplay(input){
+    display.value += input;
+}
+
+function ClearDisplay(){
+    display.value = "";
+}
+
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error";
+    }
+    
+}
+
+function deleteLast() {
+    display.value = display.value.slice(0, -1);
+}
+
+
+document.addEventListener("keydown", function (event) {
+    const key = event.key;
+
+    // Numbers & operators
+    if (
+        (key >= "0" && key <= "9") ||
+        key === "+" || key === "-" ||
+        key === "*" || key === "/" ||
+        key === "."
+    ) {
+        appendToDisplay(key);
+    }
+
+    // Enter key (=)
+    else if (key === "Enter") {
+        calculate();
+    }
+
+    // Backspace key (⌫)
+    else if (key === "Backspace") {
+        deleteLast();
+    }
+
+    // Escape key (C)
+    else if (key === "Escape") {
+        clearDisplay();
+    }
+});
