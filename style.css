@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body{
     margin: 0;
-    background-color: color-mix(in srgb, rgb(79, 233, 225), rgb(124, 186, 17));
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +18,14 @@ body{
     width: 100%;
     padding: 20px;
     border:none;
-    background-color: rgb(78, 255, 143);
-    text-align: left;
+    /* background: transparent; */
+    border-radius: 20px;
+    /* color: aliceblue; */
+    color: #717377;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84 0.1);
+    text-align: right;
     font-size: 5rem;
+    cursor: pointer;
 }
 .keys{
     display: grid;
@@ -24,21 +35,26 @@ body{
 }
 
 .calculator{
-    background-color: #0c213c;
+    border: 1px solid #717377;
+    background: transparent;
+    padding: 20px;
     max-width: 500px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
 }
 
 button{
+    cursor: pointer;
     height: 100px;
     width: 100px;
-    border-radius: 10%;
+    border-radius: 50%;
     border: none;
     font-size: 3rem;
     font-weight: bold;
     color: white;
-    background-color: #0c213c;
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
     /* color: #0c213c;
     background-color: rgb(78, 255, 143); */
 }
@@ -52,6 +68,12 @@ button:active{
 }
 
 .btn-operator{
-    color: #0c213c;
-    background-color: rgb(78, 255, 143);
+    background: transparent;
+    color: #ee0a0a;
+    /* color: #62ff07; */
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+}
+
+.equalbtn{
+    background-color: #fb7c14;
 }
