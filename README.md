@@ -22,6 +22,17 @@ A simple calculator built using vanilla HTML, CSS and JavaScript.
 </p>
 
 
+## 📚 What I Learned
+
+- DOM Manipulation
+- Event Handling
+- Calculator Logic
+- Keyboard Input Handling
+- Responsive Design
+- JavaScript Debugging
+- Git & GitHub
+
+
 <h2>Demo</h2>
 
 <a href="https://aadilkhanpathan.github.io/Calculator/">
@@ -32,5 +43,5 @@ A simple calculator built using vanilla HTML, CSS and JavaScript.
 
 ## 📦 Installation
 
-1. Clone the repository
+Clone the repository
 git clone https://github.com/AadilKhanPathan/Calculator.git
